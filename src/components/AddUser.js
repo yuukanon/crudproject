@@ -15,7 +15,7 @@ const AddUser = ({ addingUser }) => {
   return(
     <>
       <input onChange = {handleChange} type="text" name="user" value={name}/>
-      <button onSubmit = {handleClick}>add user</button>
+      <button onClick = {handleClick}>add user</button>
     </>
   )
 }
