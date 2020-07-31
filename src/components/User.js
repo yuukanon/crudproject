@@ -1,10 +1,10 @@
 import React from 'react';
 
-const User = ({ userInfo }) => {
+const User = ({ userInfo, handleDelete }) => {
   return(
     <>
       <div>{userInfo.name}</div>
-      <button>Remove user</button>
+      <button onClick={() => handleDelete(userInfo.id)}>Remove user</button>
     </>
   )
 }
